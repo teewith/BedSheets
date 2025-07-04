@@ -1,2 +1,0 @@
-=VLOOKUP(A2,'Facilities and Beds'!$A$2:$B$21,2,FALSE) 
-=IFERROR(VLOOKUP(A2,'Facilities and Beds'!$A$2:$B$21,2,FALSE), " ")
