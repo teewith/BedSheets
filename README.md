@@ -35,6 +35,7 @@ Solutions/
 This folder contains the final Excel workbook where the number of beds has been accurately filled into Department A’s sheet using formulas like VLOOKUP and IFERROR.
 
 🔍 Purpose
+
 By walking through a simple, fictional example, this repository helps demonstrate how:
 
 Excel formulas reduce manual work
@@ -47,6 +48,7 @@ Data cleaning becomes more reliable and error-resistant
 
 
 📚 Who This Is For
+
 Anyone who:
 
 Works with health or organizational data from multiple sources
