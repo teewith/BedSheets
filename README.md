@@ -1,40 +1,42 @@
-This repository explains — in simple terms — how Excel formulas can be used to automate the process of updating certain details(in this case, beds) for different health facilities. It is designed for users working with various kinds of data who want to improve efficiency using Excel. 
-Directory Structure
-Sample Data/
+# Netflix Health Facilities
+
+This repository explains — in simple terms — how Excel formulas can be used to automate the process of updating certain details(in this case, number of beds) for different health facilities. It is designed for users working with various kinds of data who want to improve efficiency using Excel. 
+## Directory Structure
+### Sample Data/
 This folder contains a fictional but relatable dataset to demonstrate how Excel functions can help clean and combine data:
 
-Netflix Health Facilities.xlsx
+### Netflix Health Facilities.xlsx
 A workbook containing data from two departments:
 
-Facilities and Locations
+### Facilities and Locations
 Collected by Department A. Contains:
 
-Name of Facility
+*Name of Facility*
 
-Number of Patients
+*Number of Patients*
 
-Location
+*Location*
 
 ❌ Missing: Number of Beds
 
-Facilities and Beds
+### Facilities and Beds
 Collected by Department B. Contains:
 
-Name of Facility
+*Name of Facility*
 
-Number of Beds
+*Number of Beds*
 
 
-Formulas_Functions.txt
+### Formulas_Functions.txt
 A plain-text file with all Excel formulas used to:
 Match facility names between sheets
 Pull in the correct bed numbers
 Automate updates without manual lookup
 
-Solutions/
+### Solutions/
 This folder contains the final Excel workbook where the number of beds has been accurately filled into Department A’s sheet using formulas like VLOOKUP and IFERROR.
 
-🔍 Purpose
+# Purpose
 
 By walking through a simple, fictional example, this repository helps demonstrate how:
 
@@ -47,7 +49,7 @@ Data cleaning becomes more reliable and error-resistant
 
 
 
-📚 Who This Is For
+# Who This Is For
 
 Anyone who:
 
