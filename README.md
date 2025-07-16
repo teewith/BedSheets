@@ -39,6 +39,7 @@ This folder contains the final Excel workbook where the number of beds has been 
 # Visual Demonstration
 
 <img width="2252" height="896" alt="Before the  VLOOKUP FORMULA" src="https://github.com/user-attachments/assets/9d5c0c7e-660b-41ec-a89e-769fe8cb977b" />
+<hr>
 In this image, we see part of the 'Facilities and Locations' worksheet. This is before any work. The task is to populate Column D, 'Number of Beds'.
 
 <img width="1137" height="709" alt="Where we get bed figures from" src="https://github.com/user-attachments/assets/9ced05aa-d99b-4c3c-abf3-2e86489ac983" />
@@ -48,6 +49,7 @@ We get our 'Number of Beds' Values from this worksheet above.
 After using the VLOOKUP formula, column D is populated.
 
 <img width="1208" height="394" alt="errors in the VLOOKUP" src="https://github.com/user-attachments/assets/96535b8e-ab13-4a8e-af67-d9a02e6953be" />
+<hr>
 As seen above, some errors occur. In row 24 and 28, #N/A appears. This isn't a value. This is an error. To fix this error, another formula is used.
 
 
