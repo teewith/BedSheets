@@ -39,8 +39,7 @@ This folder contains the final Excel workbook where the number of beds has been 
 # Visual Demonstration
 
 <img width="2252" height="896" alt="Before the  VLOOKUP FORMULA" src="https://github.com/user-attachments/assets/9d5c0c7e-660b-41ec-a89e-769fe8cb977b" />
-<hr>
-In this image, we see part of the 'Facilities and Locations' worksheet. This is before any work. The task is to populate Column D, 'Number of Beds'.
+<p style="margin-top:20px">In this image, we see part of the 'Facilities and Locations' worksheet. This is before any work. The task is to populate Column D, 'Number of Beds'.</p>
 
 <img width="1137" height="709" alt="Where we get bed figures from" src="https://github.com/user-attachments/assets/9ced05aa-d99b-4c3c-abf3-2e86489ac983" />
 <hr>
