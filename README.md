@@ -36,6 +36,10 @@ Automate updates without manual lookup
 ### Solutions/
 This folder contains the final Excel workbook where the number of beds has been accurately filled into Department A’s sheet using formulas like VLOOKUP and IFERROR.
 
+# Visual Demonstration
+<img width="1137" height="709" alt="Where we get bed figures from" src="https://github.com/user-attachments/assets/9ced05aa-d99b-4c3c-abf3-2e86489ac983" />
+
+
 # Purpose
 
 By walking through a simple, fictional example, this repository helps demonstrate how:
