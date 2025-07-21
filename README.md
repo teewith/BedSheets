@@ -11,7 +11,7 @@ Seamlessly merge data from different departments
 Handle missing values and lookup errors automatically
 
 Provide a clear, reusable example for anyone working with facility-level data
-# Summary/Who is this for
+# Who is this for
 
 This guide is helpful for anyone who:
 
