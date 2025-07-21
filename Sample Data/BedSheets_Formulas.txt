@@ -1,0 +1,8 @@
+F1  =VLOOKUP($A3,'Facilities bedpaces'!$A$3:$B$55,2,0)
+
+F2  =IFERROR(VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0),"FACILITY NOT FOUND")
+
+F3  =IF(VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0)="", "NO VALUE ENTERED", VLOOKUP($A3, 'Facilities and    Beds'!$A$3:$B$55, 2, 0))
+
+F4  =IFERROR(IF(VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0)="", "NO VALUE ENTERED", VLOOKUP($A3, 'Facilities and    Beds'!$A$3:$B$55, 2, 0)), "FACILITY NOT FOUND")
+
