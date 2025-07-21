@@ -54,6 +54,10 @@ After using the VLOOKUP formula, column D is populated.
 <img width="1208" height="394" alt="errors in the VLOOKUP" src="https://github.com/user-attachments/assets/96535b8e-ab13-4a8e-af67-d9a02e6953be" />
 As seen above, some errors occur. In row 24 and 28, #N/A appears. This isn't a value. This is an error. To fix this error, another formula is used.
 <hr>
+=IFERROR(VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0),"FACILITY NOT FOUND")
+This formula makes sure, any '#N/A' is replaced with 'FACILITY NOT FOUND'
+
+Another issue faced is that, in some facilities, like 'Vulcan Health Services'. 
 
 
 # Purpose
