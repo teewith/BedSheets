@@ -67,7 +67,7 @@ Adds logic to check for blanks
 <code>=IFERROR(IF(VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0)="", "NO VALUE ENTERED", VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0)), "FACILITY NOT FOUND")</code>
 
 **F4: Combination of logic**
-<code>=IFERROR(IF(VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0)="", "NO VALUE ENTERED", VLOOKUP($A3, 'Facilities and    Beds'!$A$3:$B$55, 2, 0)), "FACILITY NOT FOUND")</code>
+<code>=IFERROR(IF(VLOOKUP($A3,'Facilities and Beds'!$A$3:$B$55,2,0)="","NO VALUE ENTERED",VLOOKUP($A3,'Facilities and Beds'!$A$3:$B$55,2,0)),"FACILITY NOT FOUND")</code>
 
 # Visual Walkthrough
 
@@ -108,5 +108,5 @@ Adds logic to check for blanks
 - Replaces <code>#N/A</code> errors with <code>"FACILITY NOT FOUND"</code>  
 - Replaces blanks with <code>"NO VALUE ENTERED"</code>  
 
-<p>This ensures the <strong>'Number of Beds'</strong> column is clean, informative, and error-free.</p>
+<p>This ensures the <strong>'Number of Beds'</strong> column is clean, informative, and error-free. Below we see an excerpt of the completed worksheet after applying formula F4.</p>
 
