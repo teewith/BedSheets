@@ -11,6 +11,14 @@ Seamlessly merge data from different departments
 Handle missing values and lookup errors automatically
 
 Provide a clear, reusable example for anyone working with facility-level data
+# Summary/Who is this for
+
+This guide is helpful for anyone who:
+
+- Works with health, education, or organizational data from multiple sources  
+- Wants to learn or teach basic but powerful Excel formulas  
+- Needs a fast and reliable way to reconcile and clean up data  
+
 
 # Directory Structure
 
@@ -102,10 +110,3 @@ Adds logic to check for blanks
 
 <p>This ensures the <strong>'Number of Beds'</strong> column is clean, informative, and error-free.</p>
 
-# Summary/Who is this for
-
-This guide is helpful for anyone who:
-
-- Works with health, education, or organizational data from multiple sources  
-- Wants to learn or teach basic but powerful Excel formulas  
-- Needs a fast and reliable way to reconcile and clean up data  
