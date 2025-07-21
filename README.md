@@ -1,44 +1,65 @@
 # Netflix Health Facilities
 
-This repository explains — in simple terms — how Excel formulas can be used to automate the process of updating certain details(in this case, number of beds) for different health facilities. It is designed for users working with various kinds of data who want to improve efficiency using Excel. 
-## Directory Structure
-### Sample Data/
-This folder contains a fictional but relatable dataset to demonstrate how Excel functions can help clean and combine data:
+This repository demonstrates—using simple Excel formulas—how to automate populating the Number of Beds for health facilities. It's ideal for users managing data across multiple sources who want to improve efficiency, accuracy, and consistency using Excel.
+# Purpose
+Reduce manual work using formulas like VLOOKUP, IF, and IFERROR
 
-### Netflix Health Facilities.xlsx
-A workbook containing data from two departments:
+Seamlessly merge data from different departments
 
-### Facilities and Locations
-Collected by Department A. Contains:
+Handle missing values and lookup errors automatically
 
-*Name of Facility*
+Provide a clear, reusable example for anyone working with facility-level data
 
-*Number of Patients*
+ # Directory Structure
+## Sample Data/
+Contains a fictional dataset that demonstrates Excel data reconciliation.
 
-*Location*
+Netflix Health Facilities.xlsx
+Contains two worksheets from different departments:
+
+Facilities and Locations (from Dept A):
+
+Name of Facility
+
+Number of Patients
+
+Location
 
 ❌ Missing: Number of Beds
 
-### Facilities and Beds
-Collected by Department B. Contains:
+Facilities and Beds (from Dept B):
 
-*Name of Facility*
+Name of Facility
 
-*Number of Beds*
+Number of Beds
 
+Formulas_Functions.txt
+A plain-text file listing all Excel formulas used to:
 
-### Formulas_Functions.txt
-A plain-text file with all Excel formulas used to:
 Match facility names between sheets
-Pull in the correct bed numbers
-Automate updates without manual lookup
 
-### Solutions/
-This folder contains the final Excel workbook where the number of beds has been accurately filled into Department A’s sheet using formulas like VLOOKUP and IFERROR.
+Populate missing values
 
+Handle errors and blanks automatically
 
+## Solutions/
+Contains the final workbook with all formulas applied and the “Number of Beds” column accurately filled.
 
-# Visual
+# Excel Formula Flow
+F1: Basic VLOOKUP
+Pulls the bed count using the facility name
+<code>=VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0)</code>
+
+F2: VLOOKUP + IFERROR
+Replaces <code>#N/A</code> (facility not found) with <code>"FACILITY NOT FOUND"</code>
+<code>=IFERROR(VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0), "FACILITY NOT FOUND")</code>
+
+F3: Handling Empty Bed Values
+Adds logic to check for blanks
+<code>=IFERROR(IF(VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0)="", "NO VALUE ENTERED", VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0)), "FACILITY NOT FOUND")
+</code>
+# Visual Walkthrough
+
 <img width="2252" height="896" alt="Before the VLOOKUP FORMULA" src="https://github.com/user-attachments/assets/9d5c0c7e-660b-41ec-a89e-769fe8cb977b" /> 
 <p style="margin-top:30px">This image shows a portion of the <strong>'Facilities and Locations'</strong> worksheet before any processing. The task is to populate <strong>Column D</strong>, titled <em>'Number of Beds'</em>.</p>
 
@@ -73,25 +94,12 @@ Replaces blanks with <code>"NO VALUE ENTERED"</code>
 
 This ensures the <strong>'Number of Beds'</strong> column is clean, informative, and error-free.
 
-# Purpose
-
-By walking through a simple, fictional example, this repository helps demonstrate how:
-
-Excel formulas reduce manual work
-
-Merging data from multiple sheets becomes easier
-
-Data cleaning becomes more reliable and error-resistant
-
-
-
-
 # Who This Is For
 
-Anyone who:
+This guide is helpful for anyone who:
 
-Works with health or organizational data from multiple sources
+Works with health, education, or organizational data from multiple sources
 
-Wants to learn basic but powerful Excel formulas
+Wants to learn or teach basic but powerful Excel formulas
 
-Needs an easy-to-understand guide to updating columns like “beds”, “staff count”, or “inventory” across sheets
+Needs a fast and reliable way to reconcile and clean up data
