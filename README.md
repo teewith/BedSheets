@@ -58,6 +58,9 @@ Replaces <code>#N/A</code> (facility not found) with <code>"FACILITY NOT FOUND"<
 Adds logic to check for blanks  
 <code>=IFERROR(IF(VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0)="", "NO VALUE ENTERED", VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0)), "FACILITY NOT FOUND")</code>
 
+**F4: Combination of logic**
+<code>=IFERROR(IF(VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0)="", "NO VALUE ENTERED", VLOOKUP($A3, 'Facilities and    Beds'!$A$3:$B$55, 2, 0)), "FACILITY NOT FOUND")</code>
+
 # Visual Walkthrough
 
 <img width="2252" height="896" alt="Before the VLOOKUP FORMULA" src="https://github.com/user-attachments/assets/9d5c0c7e-660b-41ec-a89e-769fe8cb977b" />  
@@ -99,7 +102,7 @@ Adds logic to check for blanks
 
 <p>This ensures the <strong>'Number of Beds'</strong> column is clean, informative, and error-free.</p>
 
-# Who This Is For
+# Summary/Who is this for
 
 This guide is helpful for anyone who:
 
