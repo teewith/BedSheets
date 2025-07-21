@@ -38,6 +38,7 @@ This folder contains the final Excel workbook where the number of beds has been 
 
 # Visual Demonstration
 
+
 <img width="2252" height="896" alt="Before the  VLOOKUP FORMULA" src="https://github.com/user-attachments/assets/9d5c0c7e-660b-41ec-a89e-769fe8cb977b" />
 <p style="margin-top:30px">In this image, we see part of the 'Facilities and Locations' worksheet. This is before any work. The task is to populate Column D, 'Number of Beds'.</p>
 <hr>
@@ -54,11 +55,22 @@ After using the VLOOKUP formula, column D is populated.
 <img width="1208" height="394" alt="errors in the VLOOKUP" src="https://github.com/user-attachments/assets/96535b8e-ab13-4a8e-af67-d9a02e6953be" />
 As seen above, some errors occur. In row 24 and 28, #N/A appears. This isn't a value. This is an error. To fix this error, another formula is used.
 <hr>
-=IFERROR(VLOOKUP($A3, 'Facilities and Beds'!$A$3:$B$55, 2, 0),"FACILITY NOT FOUND")
-This formula makes sure, any '#N/A' is replaced with 'FACILITY NOT FOUND'
 
-Another issue faced is that, in some facilities, like 'Vulcan Health Services'. 
+F2 makes sure, any '#N/A' entry is replaced with 'FACILITY NOT FOUND'. 
 
+Another issue faced is that, in some facilities, like 'Vulcan Health Services', the number of beds was not entered. in this case, F3 is used to populate the cell with 'NO VALUE ENTERED' instead.
+
+After merging all these formulas, the final formula, populates 'number pf beds' column with the coresponding... it replaces #N/A, it replaces blank cells 
+
+# Visual
+<img width="2252" height="896" alt="Before the VLOOKUP FORMULA" src="https://github.com/user-attachments/assets/9d5c0c7e-660b-41ec-a89e-769fe8cb977b" /> <p style="margin-top:30px">This image shows a portion of the <strong>'Facilities and Locations'</strong> worksheet before any processing. The task is to populate <strong>Column D</strong>, titled <em>'Number of Beds'</em>.</p> <hr> <img width="1137" height="709" alt="Where we get bed figures from" src="https://github.com/user-attachments/assets/9ced05aa-d99b-4c3c-abf3-2e86489ac983" /> <p>We extract the <strong>'Number of Beds'</strong> values from the worksheet shown above.</p> <hr> <img width="1790" height="739" alt="After the VLOOKUP FORMULA" src="https://github.com/user-attachments/assets/e9e855a1-ff86-4733-b8b8-744ff334a710" /> <p>After applying the <code>VLOOKUP</code> formula, <strong>Column D</strong> is successfully populated with the bed numbers.</p> <hr> <img width="1208" height="394" alt="Errors in the VLOOKUP" src="https://github.com/user-attachments/assets/96535b8e-ab13-4a8e-af67-d9a02e6953be" /> <p>However, some errors are present. In rows 24 and 28, we see <code>#N/A</code>. This is not a value—it’s an error, meaning the facility wasn't found in the source data.</p> <hr> <p>To handle this, we use a formula in cell <strong>F2</strong> that replaces any <code>#N/A</code> with the message <code>"FACILITY NOT FOUND"</code>.</p> <p>Another issue arises when a facility exists in the source data but has no bed count entered. For example, <em>'Vulcan Health Services'</em>. In these cases, we use the formula in <strong>F3</strong> to replace the blank cell with <code>"NO VALUE ENTERED"</code>.</p> <p>After combining all logic into one final formula, Column D is populated as follows:</p>
+Matches and returns correct bed values where available
+
+Replaces <code>#N/A</code> errors with <code>"FACILITY NOT FOUND"</code>
+
+Replaces blanks with <code>"NO VALUE ENTERED"</code>
+
+This ensures the <strong>'Number of Beds'</strong> column is clean, informative, and error-free.
 
 # Purpose
 
