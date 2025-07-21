@@ -109,4 +109,6 @@ Adds logic to check for blanks
 - Replaces blanks with <code>"NO VALUE ENTERED"</code>  
 
 <p>This ensures the <strong>'Number of Beds'</strong> column is clean, informative, and error-free. Below we see an excerpt of the completed worksheet after applying formula F4.</p>
+<img width="2597" height="1376" alt="Results" src="https://github.com/user-attachments/assets/dab8e8a3-3705-4fa9-98f3-c72c93ba060a" />
+
 
